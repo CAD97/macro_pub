@@ -4,6 +4,12 @@ version = "0.1.0"
 edition = "2021"
 rust-version = "1.56"
 
+description = "polyfill proc-macro for visibility scoped macros"
+repository = "https://github.com/CAD97/macro_pub"
+license = "MIT OR Apache-2.0"
+keywords = ["macro_rules", "decl_macro", "macro", "visibility", "namespaced"]
+categories = ["rust-patterns"]
+
 [lib]
 proc-macro = true
 
