@@ -175,11 +175,11 @@ jobs:
       - name: Document examples (stable)
         uses: actions-rs/cargo@v1
         with:
-          command: doc
-          args: +stable --examples --no-deps
+          command: +stable
+          args: doc --examples --no-deps
 
       - name: Document examples (nightly)
         uses: actions-rs/cargo@v1
         with:
-          command: doc
-          args: +nightly-2022-04-02 --examples --no-deps
+          command: +nightly-2022-04-02
+          args: doc --examples --no-deps
