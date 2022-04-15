@@ -194,7 +194,7 @@ pub fn macro_pub(attr: TokenStream, item: TokenStream) -> TokenStream {
     };
 
     let macro_rules_name = TokenTree::Ident(Ident::new(
-        &format!("macro_impl_{hash}_{macro_name}"),
+        &format!("macro_impl_{}_{}", hash, macro_name),
         macro_name.span(),
     ));
 
